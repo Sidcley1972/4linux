@@ -1,7 +1,7 @@
 <?php
 $dia = (int) $_GET['dia'];
 
-echo "switch <br>";
+echo "switch Visual Studio <br>";
 
 switch ($dia) {
     case 1:
