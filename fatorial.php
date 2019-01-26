@@ -7,7 +7,6 @@
 
 <?php
 
-
 $fat = $_POST['fat'];
 $original = $fat;
 $resul = 1;
