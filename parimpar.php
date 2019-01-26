@@ -17,7 +17,7 @@ p {
 
 <form action="parimpar.php" method="post">
 	Número 1:<input type="text" name="num1"><br>
-	<input type="submit" value="Verificar">
+	<input type="submit" value="Verificar Novo">
 </form>
 <?php
 
