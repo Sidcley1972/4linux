@@ -55,8 +55,8 @@ $alunos[]  = ['id'=>3,'nome'=>'Felipe'];
 $alunos[3] = ['id'=>4,'nome'=>'Rafael'];
 
 echo "Imprindo Echo <br>";
-echo $alunos[0][0];
-echo $alunos[0][1];
+echo $alunos[3][0];
+echo $alunos[3][1];
 
 
 echo "Imprindo Print_r <br>";
