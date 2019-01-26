@@ -10,7 +10,7 @@ h2 {
 
 p {
   font-family: verdana;
-  font-size: 50px;
+  font-size: 55px;
 }
 
 </style>
