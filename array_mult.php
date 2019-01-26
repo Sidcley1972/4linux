@@ -52,11 +52,12 @@ $alunos = [
 ];
 
 $alunos[]  = ['id'=>3,'nome'=>'Felipe'];
-$alunos[3] = ['id'=>4,'nome'=>'Rafael'];
+$alunos[] = ['id'=>4,'nome'=>'Rafael'];
 
-echo "Imprindo Echo <br>";
-echo $alunos[3][0];
-echo $alunos[3][1];
+echo "Imprindo Echo teste <br>";
+echo $alunos[1][0][0];
+echo $alunos[1][1];
+echo $alunos[0][0][0];
 
 
 echo "Imprindo Print_r <br>";
@@ -69,12 +70,11 @@ var_dump($alunos);
 
 echo "<br>";
 
-echo "foreach <br>";
+echo "foreach teste <br>";
 foreach ($alunos as $aluno ) {
 //	echo "<h3>{$aluno['id']} - {$aluno['nome']}";
 	echo $aluno['id'] . "-" . $aluno['nome'];
-
-	echo "<br>";
+    echo "<br>";
 }
 
 
