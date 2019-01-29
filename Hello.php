@@ -1,7 +1,7 @@
 <?php
 $nome = "sidcley" . " de carvalho";
 $conta = (int) "5";
-$conta2 = (int) "6"
+$conta2 = (int) "6";
 
 echo "<br>";
 

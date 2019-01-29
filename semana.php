@@ -11,7 +11,7 @@ switch ($dia) {
         echo "Segunda-feira";
         break;
     case 3:
-        echo "TerÃ§a-feira";
+        echo "Terça-feira";
         break;
 	case 4:
         echo "Quarta-feira";
@@ -23,10 +23,10 @@ switch ($dia) {
         echo "Sexta-feira";
         break;
     case 7:
-        echo "SÃ¡bado";
+        echo "Sábado";
         break;
     default:
-        echo "Valor invÃ¡lido";   
+        echo "Valor Inválido";   
 }      
 
 Echo "<br> if/else <br>";
@@ -36,7 +36,7 @@ if ($dia == 1) {
 } elseif ($dia == 2) {
     echo "Segunda-feira";
 } elseif ($dia == 3) {
-    echo "TerÃ§a-feira";
+    echo "Terça-feira";
 } elseif ($dia == 4) {
     echo "Quarta-feira";
 } elseif ($dia == 5) {
@@ -44,7 +44,7 @@ if ($dia == 1) {
 } elseif ($dia == 6) {
     echo "Sexta-feira";
 } elseif ($dia == 7) {
-    echo "SÃ¡bado";
+    echo "Sábado";
 } else {
-    echo "Valor InvÃ¡lido";
+    echo "Valor Inválido";
 }
