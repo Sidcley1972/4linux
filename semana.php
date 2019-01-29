@@ -3,6 +3,7 @@ $dia = (int) $_GET['dia'];
 
 echo "switch Visual Studio <br>";
 
+
 switch ($dia) {
     case 1:
         echo "Domingo";

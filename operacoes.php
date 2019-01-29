@@ -6,6 +6,7 @@ $var3 = (float) 3;
 $var4 = 4;
 $nome = "php";
 
+
 $expo = $var1 ** $var1;
 $soma = $var1 + $var3;
 $multi = $var1 * $var2;
