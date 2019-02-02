@@ -1,7 +1,9 @@
 <?php
 echo "<pre>";
 
+
 $numero = (int) 0;
+
 
 //	echo $numero;
 //	echo "<br>";
