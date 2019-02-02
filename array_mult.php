@@ -54,13 +54,27 @@ $alunos = [
 $alunos[]  = ['id'=>3,'nome'=>'Felipe'];
 $alunos[] = ['id'=>4,'nome'=>'Rafael'];
 
-echo "Imprindo Echo teste <br>";
-echo $alunos[1][0][0];
-echo $alunos[1][1];
-echo $alunos[0][0][0];
+echo "Imprindo array Echo Alunos inicio <br>";
+
+echo is_array($alunos) ? 'Array' : 'not an Array';
+
+echo "<br>";
 
 
-echo "Imprindo Print_r <br>";
+echo $alunos[0]{'id'};
+echo "<br>";
+echo $alunos[0]{'nome'};
+echo "<br>";
+
+echo $alunos[1]{'id'};
+echo "<br>";
+echo $alunos[1]{'nome'};
+echo "<br>";
+
+echo "Imprindo array Echo Alunos fim <br>";
+
+
+echo "Imprindo Print_r Alunos <br>";
 print_r($alunos);
 
 echo "<br>";

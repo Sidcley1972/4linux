@@ -1,14 +1,18 @@
 <br><br>
-<h1> Fatorial </h1>
+<h1> Fatorial  </h1>
 <form method="post" action="fatorial.php">
 <input type="text" name="fat"><br>
 <input type="submit" name="aa" value="enviar">
+<pre>
 </form>
 
 <?php
 
+
 $fat = $_POST['fat'];
 $original = $fat;
+
+/*
 $resul = 1;
 	for($i = $fat; $i >= 1; $i--){
 
@@ -20,6 +24,16 @@ $resul = 1;
 		$fat--;
 		//echo "fat depois = $fat <br>";			
 	}
+
+echo "Fatorial de $original = ".$resul."<br>";
+*/
+
+$resul = 1;
+
+while ($fat > 1){
+	$resul *= $fat; 
+	$fat--;
+}
 
 echo "Fatorial de $original = ".$resul."<br>";
 
