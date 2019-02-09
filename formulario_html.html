@@ -8,8 +8,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <form action="form_recebe_cadastro.php" method="post" enctype="multipart/form-data" >
-	Nome :<input type="text" name="nome" ><br>
-	E-mail:<input type="text" name="email" ><br>
+	Nome :<input type="text" name="nome" value = "<?=$nome;?>"><br>
+	E-mail:<input type="text" name="email" value = "<?=$email;?>"><br>
 	Senha :<input type="password" name="senha"><br>
 	Confirmar Senha:<input type="password" name="senha-confirmacao"><br>
 	Arquivo: <input type="file" name="arquivo"><br>
