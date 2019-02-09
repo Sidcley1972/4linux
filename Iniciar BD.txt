@@ -1,0 +1,18 @@
+Iniciar BD
+
+sudo /etc/init.d/postgresql start
+sudo /etc/init.d/mysql start
+
+sudo su
+su - postgres
+
+/q
+
+psql
+
+
+\d listar tabelas
+\l listar banco de dados
+\d usuarios ver estrutura da tabela
+
+

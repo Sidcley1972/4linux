@@ -1,5 +1,8 @@
 <?php
-require"formulario_html.html";
+require "conecta_bd.php";
+
+define('NOME_APLICACAO','Turma-500');
+
 echo "<pre>";
 echo "Número aleatório <br>";
 $cod = rand(99999554967,99999999999);
@@ -31,14 +34,14 @@ function exibirErro($mensagem){
 
 echo "teste isset";
 echo "<br>";
-echo($arquivo);
+var_dump($arquivo);
 
 //if isset($arquivo) {
 //	echo "arquivo <br>";
 //	echo $arquivo;
 //}
 
-if ($_FILES['arquivo']['size'] != 0) {
+if ($_FILES['arquivo']['error'] == UPLOAD_ERR_OK) {
 	echo " testar arquivo vazio <br>";
 	echo $_FILES['arquivo']['name'];
 	echo "<br>";
@@ -92,28 +95,7 @@ if (array_key_exists('arquivo', $_FILES)) {
 
 echo "<br>";
 
-/*
+inserirUsuario ($nome, $email, $senha);
 
+require "formulario_html.html";
 
-echo "imprimindo por print_r";
-echo "<br>";
-print_r($_POST);
-
-
-$nome  = $_POST['nome'];
-$email = $_POST['email'];
-$senha = $_POST['senha'];
-$foto  = $_FILES['arquivo'];
-
-echo "<br>";
-
-echo "imprimindo por echo";
-echo "<br>";
-echo $nome;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $senha;
-echo "<br>";
-echo $foto;
-*/

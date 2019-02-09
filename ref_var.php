@@ -4,6 +4,7 @@ $a = 1;
 $b = &$a; // a e b passam a ser a mesma variável
 $a = 2;
 
+define('NOME_APLICACAO','4linux');
 
 echo "a = $a";
 echo "<br>";
@@ -19,4 +20,5 @@ $texto = 'Sidcley';
 adicionarSobrenome($texto);
 echo $texto;
 
-
+echo "<br>";
+echo NOME_APLICACAO;
