@@ -2,7 +2,8 @@
 require "conecta_bd.php";
 
 define('NOME_APLICACAO','Turma-500');
-
+echo "<pre>";
+/*
 echo "<pre>";
 echo "Número aleatório <br>";
 $cod = rand(99999554967,99999999999);
@@ -15,7 +16,7 @@ print_r($_POST);
 echo "<br>";
 
 print_r($_FILES);
-
+*/
 
 $nome     = $_POST['nome'];
 $email    = $_POST['email'];
@@ -31,7 +32,7 @@ function exibirErro($mensagem){
     </div>";
 }
 
-
+/*
 echo "teste isset";
 echo "<br>";
 var_dump($arquivo);
@@ -64,9 +65,12 @@ foreach ($campos as $campo) {
 	}
 }
 print_r($_POST);
+
+
 $dados = array_map('strtoupper', $_POST);
 
 $dados = array_map('strip_tags', $_POST);
+
 print_r($_POST);
 
 echo "teste arry map para executar uma função";
@@ -94,8 +98,13 @@ if (array_key_exists('arquivo', $_FILES)) {
 }
 
 echo "<br>";
+*/
 
-inserirUsuario ($nome, $email, $senha);
+//inserirUsuario ($nome, $email, $senha);
+
+retornaQuery($nome, $email, $senha);
 
 require "formulario_html.html";
+
+
 

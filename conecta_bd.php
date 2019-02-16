@@ -34,13 +34,47 @@ echo "<br>";
 	$insert = "INSERT INTO usuarios (nome, email, senha)  
 	VALUES ('$nome', '$email', '$senha')";
 	var_dump($insert);
+	// insert update delete
 	$retorno = pg_exec($conexao, $insert);
-	if ($retorno === true) {
+	echo "retorno<br>";
+	echo $retorno;
+	//if ($retorno === true) {
 		exibirMensagem("Sucesso na gravação", "Gravação BD", 4, "alert");
-	}
+	//}
 }
 
+function retornaQuery($nome, $email, $senha){
+
+	$conexao = conectar();
+	var_dump($conexao);	
 
 
+//	$result=pg_query($conexao, "SELECT * FROM usuarios where nome ='".$nome."'");
+	$result=pg_query($conexao, "SELECT * FROM usuarios ");
+  		if  (!$result) {
+   			echo "NÃO EXECUTOU";
+  		}
+  		if (pg_num_rows($result) == 0) {
+   			echo "0 REGISTROS";
+  		}
+  	else {
+   		while ($row = pg_fetch_array($result)) {
+		     //do stuff with $row
+   			echo "<br>";
+		   	echo "ID: ".$row["id"];
+		   	echo "<br>";   	
+		   	echo "Nome: ".$row["nome"];
+		   	echo "<br>";   	
+		   	echo "Email: ".$row["email"];
+		   	echo "<br>";   	
+		    echo "Senha: ".$row["senha"];
+		   	echo "<br>";    
+   }
 
+$row = pg_fetch_all($result);
+var_dump($row);
+echo "<br>";
+print_r($row);
+  }
+}
 //inserirUsuario("teste manual", "teste@uol.com", "122344");
